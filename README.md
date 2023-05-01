@@ -9,6 +9,7 @@ Bu soruda, Entity Framework ve C# kullanarak `User`, `Post` ve `Tag` olmak üzer
 ```c#
 public class User
 {
+    // Modeller örnektir düzenlenmeleri gerekmektedir.
     public int Id { get; set; }
     public string Name { get; set; }
     public ICollection<Post> Posts { get; set; }
@@ -17,6 +18,7 @@ public class User
 
 public class Post
 {
+    // Modeller örnektir düzenlenmeleri gerekmektedir.
     public int Id { get; set; }
     public string Title { get; set; }
     public DateTime PublishDate { get; set; } = DateTime.UtcNow;
@@ -26,6 +28,7 @@ public class Post
 
 public class Tag
 {
+    // Modeller örnektir düzenlenmeleri gerekmektedir.
     public int Id { get; set; }
     public string Name { get; set; }
     public ICollection<Post> Posts { get; set; }
@@ -33,6 +36,7 @@ public class Tag
 
 public class PostTag
 {
+    // Modeller örnektir düzenlenmeleri gerekmektedir.
     public int PostId { get; set; }
     public Post Post { get; set; }
     public int TagId { get; set; }
@@ -40,7 +44,6 @@ public class PostTag
     public int Order { get; set; }
 }
 ```
-_Modeller örnektir düzenlenmeleri gerekmektedir._
 
 ## Soru
 Veritabanı oluşturma ve ilişkilendirme işlemlerini tamamladıktan sonra:
