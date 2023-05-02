@@ -54,4 +54,4 @@ Ahmet Tarık Duyar
 Zafer Alp Çetin (invited by Ahmet Tarık Duyar)
     - Strategy Design Pattern? [Dart, Pattern]
 ```
-*İlk iki tag `PostTag` tablosundaki `Order` parametresine göre alınmalıdır.
+*İlk iki tag, `PostTag` tablosundaki `Order` parametresine göre alınmalıdır.
